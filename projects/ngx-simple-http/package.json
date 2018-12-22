@@ -1,0 +1,35 @@
+{
+  "name": "ngx-simple-http",
+  "description": "Simplified HTTP requests using Angular's HttpClient.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "simple-http",
+    "http",
+    "httpclient",
+    "angular-httpclient"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chan4077/ngx-simple-http"
+  },
+  "author": {
+    "email": "edric.chan.1997@gmail.com",
+    "name": "Edric Chan",
+    "url": "https://github.com/Chan4077"
+  },
+  "readme": "https://github.com/Chan4077/ngx-simple-http#readme",
+  "bugs": {
+    "url": "https://github.com/Chan4077/ngx-simple-http",
+    "email": "edric.chan.1997@gmail.com"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0 || ^7.0.0",
+    "@angular/core": "^6.0.0 || ^7.0.0",
+    "rxjs": "^6.2.2"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3"
+  }
+}
