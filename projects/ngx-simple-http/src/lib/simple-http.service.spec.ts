@@ -9,8 +9,14 @@ interface StudioGhilbliFilm {
   description?: string;
   director?: string;
   producer?: string;
-  release_date?: number;
-  rt_score?: number;
+  release_date?: string;
+  rt_score?: string;
+  people?: string[];
+  species?: string[];
+  locations?: string[];
+  vehicles?: string[];
+  url?: string;
+  length?: any;
 }
 interface LetsValidateThumbsJson {
   mime_type?: string;
@@ -76,8 +82,8 @@ describe('SimpleHttpService', () => {
           `use Laputa's science to make himself ruler of the world.`);
         expect(result.director).toEqual('Hayao Miyazaki');
         expect(result.producer).toEqual('Isao Takahata');
-        expect(result.release_date).toEqual(1986);
-        expect(result.rt_score).toEqual(95);
+        expect(result.release_date).toEqual('1986');
+        expect(result.rt_score).toEqual('95');
       });
     }));
     it('should return a generated thumbnail in JSON using the Let\'s Validate API', () => {
