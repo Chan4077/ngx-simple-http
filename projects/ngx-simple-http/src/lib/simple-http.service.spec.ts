@@ -69,10 +69,10 @@ describe('SimpleHttpService', () => {
         expect(result).not.toBeNull();
         expect(result.id).toEqual('2baf70d1-42bb-4437-b551-e5fed5a87abe');
         expect(result.title).toEqual('Castle in the Sky');
-        expect(result.description).toEqual(`The orphan Sheeta inherited a mysterious crystal` +
-          `that links her to the mythical sky-kingdom of Laputa. With the help of resourceful` +
-          `Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the` +
-          `once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to` +
+        expect(result.description).toEqual(`The orphan Sheeta inherited a mysterious crystal ` +
+          `that links her to the mythical sky-kingdom of Laputa. With the help of resourceful ` +
+          `Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the ` +
+          `once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to ` +
           `use Laputa's science to make himself ruler of the world.`);
         expect(result.director).toEqual('Hayao Miyazaki');
         expect(result.producer).toEqual('Isao Takahata');
