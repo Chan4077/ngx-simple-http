@@ -1,0 +1,52 @@
+os:
+- linux
+language: node_js
+node_js:
+- 10.6.0
+addons:
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
+stages:
+  - lint
+  - test
+  # Only allow building if the branch is master and is pushed
+  - name: build
+    if: type = push AND branch = master
+jobs:
+  include:
+  - stage: lint
+    env: MODE=lint-lib
+    name: "Library linting"
+  - stage: test
+    env: MODE=test-lib
+    name: "Library testing"
+  - stage: build
+    env: DEPLOY_MODE=build-artifacts
+    name: "Build artifacts"
+before_script:
+- sudo chown root /opt/google/chrome/chrome-sandbox
+- sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+before_install:
+- export CHROME_BIN=/usr/bin/google-chrome
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- npm install -g @angular/cli
+- ng --version
+install:
+- npm install
+script:
+- "./scripts/travis.sh"
+notifications:
+  webhooks:
+    on_success: change
+    on_failure: always
+    on_start: false
