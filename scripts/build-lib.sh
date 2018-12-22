@@ -83,7 +83,7 @@ else
         echo -e "\x1b[32mDone copying files.\x1b[0m"
         if [[ $SKIP_NPM == false ]]; then
           if [[ $DRY_RUN == false ]]; then
-            cd dist/ngxsimple-http
+            cd dist/ngx-simple-http
             # Check if NPM exists
             if [[ ! -x $(type -P npm >/dev/null) ]] && [[ ! -x $(command -v npm) ]]; then
               echo -e "\x1b[31mNPM is not installed. Please visit https://nodejs.org to get the latest package for your OS.\x1b[0m"
