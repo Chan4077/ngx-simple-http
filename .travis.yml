@@ -17,6 +17,7 @@ branches:
   - master
   # Allow testing on Renovate branches
   - /^renovate/.*$/
+  - /^greenkeeper/.*$/
 stages:
   - lint
   - test
