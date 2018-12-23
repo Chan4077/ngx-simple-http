@@ -1,9 +1,13 @@
 {
   "groups": {
-    "default": {
+    "lib": {
       "packages": [
-        "package.json",
         "projects/ngx-simple-http/package.json"
+      ]
+    },
+    "src": {
+      "packages": [
+        "package.json"
       ]
     }
   }
