@@ -13,7 +13,7 @@ NOTE:
 
 ### Environment
 <!-- This is required -->
-- Version of `ngx-ytd-api`: 
+- Version of `ngx-simple-http`: 
 - Angular Version: _Output of `ng -v`_
 - Browser + Version: 
 - OS: 
