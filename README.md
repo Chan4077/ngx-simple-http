@@ -13,7 +13,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/Chan4077/ngx-simple-http.svg?style=flat-square)](https://github.com/Chan4077/ngx-simple-http/graphs/contributors)
 [![ngx-simple-http license](https://img.shields.io/github/license/Chan4077/ngx-simple-http.svg?style=flat-square)](https://github.com/Chan4077/ngx-simple-http/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Chan4077/ngx-simple-http.svg?style=flat-square)](https://github.com/Chan4077/ngx-simple-http/commits)
-[![Greenkeeper badge](https://badges.greenkeeper.io/Chan4077/ngx-simple-http.svg?style=flat-square)](https://greenkeeper.io/)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Chan4077/ngx-simple-http)](https://dependabot.com)
 
 <!-- END Badges -->
 
@@ -29,7 +29,7 @@ Also ensure that your app is running at least Angular 6 before continuing.
 
 ### Installing
 
-Run the following comamnd which should install the `latest` version (`1.0.0-alpha.3`):
+Run the following comamnd which should install the `latest` version (`1.0.0`):
 
 ```bash
 npm install ngx-simple-http --save
