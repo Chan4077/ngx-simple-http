@@ -7,10 +7,12 @@ import { Observable } from 'rxjs';
 export class SimpleHttpService {
   constructor(private http: HttpClient) { }
   /**
-   * Generates the query parameters to be used for a HTTP DELETE request
+   * Constructs and sends a HTTP DELETE request
    * @param apiEndpoint The API endpoint
    * @param apiParams Parameters to append to the API endpoint
    * @param apiHeaders HTTP headers to append to the request
+   * @template P A TypeScript interface to type the HTTP request's parameters to
+   * @template R A TypeScript interface to type the HTTP request's response to
    * @return A `HttpClient` instance
    */
   createHttpDelete<P extends any, R extends any>(apiEndpoint: string, apiParams: P, apiHeaders: HttpHeaders = null): Observable<R> {
@@ -38,10 +40,12 @@ export class SimpleHttpService {
     }
   }
   /**
-   * Generates the query parameters to be used for a HTTP GET request
+   * Constructs and sends a HTTP GET request
    * @param apiEndpoint The API endpoint
    * @param apiParams Parameters to append to the API endpoint
    * @param apiHeaders HTTP headers to append to the request
+   * @template P A TypeScript interface to type the HTTP request's parameters to
+   * @template R A TypeScript interface to type the HTTP request's response to
    * @return A `HttpClient` instance
    */
   createHttpGet<P extends any, R extends any>(apiEndpoint: string, apiParams: P, apiHeaders: HttpHeaders = null): Observable<R> {
@@ -69,11 +73,14 @@ export class SimpleHttpService {
     }
   }
   /**
-   * Generates the query parameters to be used with the API endpoint
+   * Constructs and sends a HTTP POST request
    * @param apiEndpoint The API endpoint
    * @param apiParams Parameters to append to the API endpoint
    * @param apiBody The request body
    * @param apiHeaders HTTP headers to append to the request
+   * @template B A TypeScript interface to type the HTTP request's body to
+   * @template P A TypeScript interface to type the HTTP request's parameters to
+   * @template R A TypeScript interface to type the HTTP request's response to
    * @return A `HttpClient` instance
    */
   createHttpPost<
@@ -126,11 +133,14 @@ export class SimpleHttpService {
     }
   }
   /**
-   * Generates the query parameters to be used with the API endpoint
+   * Constructs and sends a HTTP PUT request
    * @param apiEndpoint The API endpoint
    * @param apiParams Parameters to append to the API endpoint
    * @param apiBody The request body
    * @param apiHeaders HTTP headers to append to the request
+   * @template B A TypeScript interface to type the HTTP request's body to
+   * @template P A TypeScript interface to type the HTTP request's parameters to
+   * @template R A TypeScript interface to type the HTTP request's response to
    * @return A `HttpClient` instance
    */
   createHttpPut<
