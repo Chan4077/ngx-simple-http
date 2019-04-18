@@ -65,9 +65,9 @@ describe('SimpleHttpService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-  describe('SimpleHttpService#createHttpGet', () => {
+  describe('SimpleHttpService#sendHttpGet', () => {
     it('should return a Studio Ghilbli film using the unofficial Ghibli API', async(() => {
-      const request = service.createHttpGet<null, StudioGhilbliFilm>(
+      const request = service.sendHttpGet<null, StudioGhilbliFilm>(
         'https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe',
         null
       );
@@ -87,7 +87,7 @@ describe('SimpleHttpService', () => {
       });
     }));
     it('should return a generated thumbnail in JSON using the Let\'s Validate API', () => {
-      const request = service.createHttpGet<LetsValidateThumbsParams, LetsValidateThumbsJson>(
+      const request = service.sendHttpGet<LetsValidateThumbsParams, LetsValidateThumbsJson>(
         'https://api.letsvalidate.com/v1/thumbs',
         {
           output: 'json',
