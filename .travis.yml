@@ -1,8 +1,7 @@
 os:
 - linux
 language: node_js
-node_js:
-- 10.6.0
+node_js: lts/*
 addons:
   apt:
     sources:
@@ -15,6 +14,7 @@ cache:
 branches:
   only:
   - master
+  # TODO: Remove the following lines
   # Allow testing on Renovate branches
   - /^renovate/.*$/
   - /^greenkeeper/.*$/
