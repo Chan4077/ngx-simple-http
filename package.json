@@ -36,7 +36,7 @@
     "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "^5.0.1",
     "gulp": "^4.0.0",
-    "gulp-conventional-changelog": "^2.0.9",
+    "gulp-conventional-changelog": "^2.0.26",
     "inquirer": "^6.3.1",
     "jasmine": "^3.3.1",
     "jasmine-core": "^3.3.0",
